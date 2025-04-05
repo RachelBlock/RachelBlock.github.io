@@ -5,77 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank you</title>
     <link href="images/icon.jpeg" rel="icon">
-    <style>
-body {
-  background-image: url(images/background.png); 
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-.flip-card {
-  background-color: transparent;
-  width:50%; 
-  height: 60%;
-  perspective: 50rem;
-
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 16px 32px 0 rgb(0, 0, 0);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateX(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position:absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-back {
-  transform: rotateX(180deg);
-}
-
-@media (max-width: 600px) {
-  body {
-    background-image: url(images/mobileback.png);
-    background-repeat: repeat;
-  }
-  .flip-card {
-    width:80%; 
-    height: 40%;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  }
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <img src="images/front.png" alt="front" style="width: 100%; height: 100%">
-            </div>
-            <div class="flip-card-back">
-                <img src="images/inside.png" alt="inside" style="width: 100%; height: 100%;">
-            </div>
-        </div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="card-text" id="frontText">
+          <p id="frontMain">Thank You</p>
+          <p id="frontSubtitle">To the most delicate rose</p>
+      </div>
     </div>
-</body>
+    <div class="flip-card-back">
+      <div class="card-text">
+          <p>Dear Grandpa,</p>
+          <p>Thank you so much for the graduation gift! I am incredibly grateful and promise to be sensible with how I spend it.</p>
+          <p>Love, your best grandchild</p>
+          <p>Rachel</p>
+      </div>
+    </div>
+  </div>
+</div>
 </html>
